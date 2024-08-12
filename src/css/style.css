@@ -1,0 +1,160 @@
+:root{
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --brightblueHover: hsla(245, 66%, 59%, 0.866);
+    --veryPaleBlue: hsl(225, 100%, 98%);
+    --desaturatedBlue: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+
+
+.contenedor-principal{
+    
+    height: auto;
+    border-radius: 1.5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+
+@media (min-width:440px){ 
+    .contenedor-principal{
+        width: 30%;
+    }
+}
+
+.contenedor-principal img{ 
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.foto{
+    width: 100%;
+}
+
+.texto-principal{
+    margin: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
+
+.texto-principal h1{
+    color: var(--darkBlue);
+    font-weight: 900;
+}
+
+.texto-principal p{
+    color: var(--desaturatedBlue);
+    line-height: 1.5;
+}
+
+.musica{
+    width: 75%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: var(--veryPaleBlue);
+    margin-bottom: 3rem;
+}
+
+.musica-texto{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.texto h3{
+    color: var(--darkBlue);
+}
+
+.texto p{
+    color: var(--desaturatedBlue);
+}
+
+.cambio{
+    color: var(--brightblue);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.cambio:hover{
+    color: var(--brightblueHover);
+    text-decoration: none;
+}
+
+.pago{
+    width: 80%;
+    background-color: var(--brightblue);
+    color: rgb(251, 251, 251);
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    box-shadow: 0rem 1rem 1rem 0.2rem rgba(0, 0, 0, 0.269);
+}
+
+.pago:hover{
+    background-color: var(--brightblueHover);
+}
+
+.cancelar{
+    width: 80%;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.503);
+    cursor: pointer;
+}
+
+.cancelar:hover{
+    color: var(--darkBlue);
+}
+
+
+
+
+
