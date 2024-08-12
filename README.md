@@ -1,4 +1,4 @@
-# Página de Preguntas Frecuentes.
+# Responsive Order Summary.
 
 [Ver el proyecto desplegado aquí](https://vermillion-crostata-71c855.netlify.app/)
 
